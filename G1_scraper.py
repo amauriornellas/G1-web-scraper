@@ -2,10 +2,8 @@ print('::Importando Bibliotecas...') # Informação para o usuário
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-
 import time
 import requests
-
 from bs4 import BeautifulSoup
 
 print('::Acessando o Navegador...') # Informação para o usuário
