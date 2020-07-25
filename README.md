@@ -4,7 +4,7 @@ Esse algorítimo utiliza as bibliotecas: **Time**, **Selenium**, **Beautiful Sou
 Se você for utilizar o Chrome só altere a linha *21* para o endereço no qual você baixou o chromedriver.
 
 ## Links das Bibliotecas:
-  [Selenium e os drivers de interface com os navegadores][https://pypi.org/project/selenium/]
-  [Beautiful Soup e sua documentação][https://www.crummy.com/software/BeautifulSoup/bs4/doc/#]
-  [lxml para processamento de XML e HTML][https://lxml.de/installation.html]
+  [Selenium e os drivers de interface com os navegadores](https://pypi.org/project/selenium/)
+  [Beautiful Soup e sua documentação](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#)
+  [lxml para processamento de XML e HTML](https://lxml.de/installation.html)
   
