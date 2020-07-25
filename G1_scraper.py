@@ -8,12 +8,9 @@ import requests
 
 from bs4 import BeautifulSoup
 
-
-
 print('::Acessando o Navegador...') # Informação para o usuário
 
 url = 'https://g1.globo.com/' # A url do Portal G1 que vamos acessar
-
 option = Options() # Instanciando o Options para ocultar a abertura do navegador
 option.headless = True # Esse comando quando True não abre o navegador e faz as operações no background
 
@@ -27,7 +24,6 @@ driver.get(url) # Informando o navegador o endereço que ele deve acessar
 
 # Rolando a página até o final para carregar todas as manchetes
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
 time.sleep(10) #Aguardando 10 segundos para ter todos os dados carregados
 
 print('::Localizando as Manchetes...') # Informação para o usuário
@@ -51,4 +47,3 @@ for article in soup.find_all(class_='feed-post-body'):
         if resumo != None: # Checa se existe resumo para o artigo
             print('  ', resumo.text) # Imprime o resumo
         print()
-        
