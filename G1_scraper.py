@@ -4,9 +4,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 import time
+import requests
 
 from bs4 import BeautifulSoup
-import requests
+
 
 
 print('::Acessando o Navegador...') # Informação para o usuário
@@ -50,3 +51,4 @@ for article in soup.find_all(class_='feed-post-body'):
         if resumo != None: # Checa se existe resumo para o artigo
             print('  ', resumo.text) # Imprime o resumo
         print()
+        
